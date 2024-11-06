@@ -1,4 +1,9 @@
 from krita import DockWidgetFactory, DockWidgetFactoryBase, Krita
+
+# installer les dépendances
+from .install import install_requirements
+install_requirements()
+
 from .youtube_player import YouTubePlayerDocker
 
 DOCKER_ID = 'youtube_player_docker'
