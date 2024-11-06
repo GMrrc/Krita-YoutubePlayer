@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plugin Krita - Lecteur Youtube</title>
+  <!-- Lien Bootstrap CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000; /* noir */
+      color: #fff; /* blanc */
+    }
+    h1, h2 {
+      color: #ff0000; /* rouge */
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .btn-custom {
+      background-color: #ff0000;
+      color: #fff;
+    }
+    .btn-custom:hover {
+      background-color: #cc0000;
+    }
+    .code-section {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container text-center">
+    <h1>Plugin Krita - Lecteur Youtube</h1>
+    <p>Ce plugin permet d'afficher des vidéos directement sur le canvas de Krita en utilisant un docker.</p>
+
+    <h2>Comment ça marche ?</h2>
+    <div class="text-left">
+      <ul>
+        <li>L'utilisateur fournit une URL d'une vidéo YouTube ou un autre lien vidéo compatible.</li>
+        <li>Le plugin télécharge la vidéo en utilisant <strong>yt_dlp</strong>.</li>
+        <li>Une fois téléchargée, la vidéo est découpée en images avec <strong>OpenCV</strong>.</li>
+        <li>Les images sont ensuite affichées une par une sur le canvas de Krita, créant un effet de lecture vidéo.</li>
+      </ul>
+    </div>
+
+    <h2>Prérequis</h2>
+    <div class="text-left">
+      <ul>
+        <li>Avoir Krita installé.</li>
+        <li>Avoir ytb_dl et open-cv installer avec python : pip install yt-dlp opencv-python</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Script Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

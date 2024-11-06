@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=Krita/PythonPlugin
+X-KDE-Library=youtube_player
+X-Python-2-Compatible=false
+X-Krita-Manual=youtube_player.html
+Name=YouTube Player
+Comment=Lit des vidéos YouTube dans Krita
