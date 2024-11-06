@@ -35,7 +35,3 @@ pip install yt-dlp
 
 
 Contributions to improve this plugin are welcome! Feel free to submit issues or pull requests.
-
----
-
-This README should provide clear instructions on setting up and using your Krita plugin.
